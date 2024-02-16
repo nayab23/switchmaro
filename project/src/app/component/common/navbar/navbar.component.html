@@ -1,0 +1,232 @@
+
+    <!-- topbar__section__stert -->
+    <div class="topbararea">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="topbar__left">
+                        <ul>
+                            <li>
+                                Call Us: +1 800 123 456 456
+                            </li>
+                            <li>
+                                - Mail Us: switchmaro@mail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="topbar__right">
+                        <!-- <div class="topbar__icon">
+                            <i class="icofont-location-pin"></i>
+                        </div>
+                        <div class="topbar__text">
+                            <p>684 West College St. Sun City, USA</p>
+                        </div> -->
+                        <div class="topbar__list">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="icofont-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icofont-youtube-play"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- topbar__section__end -->
+
+
+    <!-- headar section start -->
+    <header>
+        <div class="headerarea headerarea__3 header__sticky header__area">
+            <div class="container desktop__menu__wrapper">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-6">
+                        <div class="headerarea__left">
+                            <div class="headerarea__left__logo">
+                                <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><img loading="lazy"  src="../../../../assets/img/logo/logo_1.png" alt="logo"  style="height: 38px;"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 main_menu_wrap">
+                        <div class="headerarea__main__menu">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a class="headerarea__has__dropdown" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="headerarea__has__dropdown" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+                                            About 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="headerarea__has__dropdown" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+                                            Contact
+                                        </a>
+                                    </li>
+                                    <!-- <li>
+                                        <a class="headerarea__has__dropdown" href="ecommerce/shop.html">eCommerce
+                                        <i class="icofont-rounded-down"></i>
+                                        </a>
+                                        <ul class="headerarea__submenu">
+                                            <li><a href="ecommerce/shop.html">Shop<span class="mega__menu__label">Online Store</span></a></li>
+                                            <li><a href="ecommerce/product-details.html">Product Details</a></li>
+                                            <li><a href="ecommerce/cart.html">Cart</a></li>
+                                            <li><a href="ecommerce/checkout.html">Checkout</a></li>
+                                            <li><a href="ecommerce/wishlist.html">Wishlist</a></li>
+                                        </ul>
+                                    </li> -->
+                                    
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="headerarea__right">
+                            <div class="headerarea__login">
+                                <a routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">signup</a>
+                            </div>
+                            <div class="headerarea__button">
+                                <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">login</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Mobile Header -->
+            <div class="container-fluid mob_menu_wrapper">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="mobile-logo">
+                            <a class="logo__dark" href="#"><img loading="lazy"  src="../../../../assets/img/logo/logo_1.png" alt="logo"  style="height: 38px;"></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="header-right-wrap">
+
+                            <div class="mobile-off-canvas">
+                                <div class="mobile-aside-button" (click)="handleMobileMenu()"><i class="icofont-navigation-menu"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- Mobile Menu Start Here -->
+    <!-- <div class="mobile-off-canvas-active inside"> -->  
+    <div class="mobile-off-canvas-active" [class.inside]="isMobileClassAdded">
+        <a class="mobile-aside-close" (click)="handleMobileMenu()"><i class="icofont icofont-close-line"></i></a>
+        <div class="header-mobile-aside-wrap">
+            <div class="mobile-search">
+                <form class="search-form" action="#">
+                    <input type="text" placeholder="Search entire store…">
+                    <button class="button-search"><i class="icofont icofont-search-2"></i></button>
+                </form>
+            </div>
+            <div class="mobile-menu-wrap headerarea">
+    
+                <div class="mobile-navigation">
+    
+                    <nav>
+                        <ul class="mobile-menu">
+                            <li>
+                                <a class="menu-item-has-children" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-has-children" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+                                    About 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-has-children" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+                                    Contact
+                                </a>
+                            </li>
+
+                            <!-- <li class="menu-item-has-children"><a href="ecommerce/shop.html">eCommerce</a>
+                                <ul class="dropdown">
+                                    <li><a href="ecommerce/shop.html">Shop<span class="mega__menu__label">Online Store</span></a></li>
+                                    <li><a href="ecommerce/product-details.html">Product Details</a></li>
+                                    <li><a href="ecommerce/cart.html">Cart</a></li>
+                                    <li><a href="ecommerce/checkout.html">Checkout</a></li>
+                                    <li><a href="ecommerce/wishlist.html">Wishlist</a></li>
+    
+                                </ul>
+                            </li> -->
+
+                        </ul>
+                    </nav>
+    
+                </div>
+    
+            </div>
+            <div class="mobile-curr-lang-wrap">
+                <div class="single-mobile-curr-lang">
+                    <a class="mobile-language-active" href="#">Language <i class="icofont-thin-down"></i></a>
+                    <div class="lang-curr-dropdown lang-dropdown-active">
+                        <ul>
+                            <li><a href="#">English (US)</a></li>
+                            <li><a href="#">English (UK)</a></li>
+                            <li><a href="#">Spanish</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-1">
+                    <div class="headerarea__login">
+                        <a href="login.html">signup</a>
+                    </div>
+                    <div class="headerarea__button">
+                        <a href="#">login</a>
+                    </div>
+                </div>
+    
+                <!-- <div class="single-mobile-curr-lang">
+                            <a class="mobile-currency-active" href="#">Currency <i class="icofont-thin-down"></i></a>
+                            <div class="lang-curr-dropdown curr-dropdown-active">
+                                <ul>
+                                    <li><a href="#">USD</a></li>
+                                    <li><a href="#">EUR</a></li>
+                                    <li><a href="#">Real</a></li>
+                                    <li><a href="#">BDT</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+            </div>
+            <div class="mobile-social-wrap">
+                <a class="facebook" href="#"><i class="icofont icofont-facebook"></i></a>
+                <a class="twitter" href="#"><i class="icofont icofont-twitter"></i></a>
+                <a class="pinterest" href="#"><i class="icofont icofont-pinterest"></i></a>
+                <a class="instagram" href="#"><i class="icofont icofont-instagram"></i></a>
+                <a class="google" href="#"><i class="icofont icofont-youtube-play"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu end Here -->
+
+
+    <router-outlet></router-outlet>
